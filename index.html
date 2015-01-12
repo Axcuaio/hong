@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>FINAL</title>
+</head>
+<body bgcolor="#000000">
+<bgsound src="../white_noise1.mid">
+<script type="text/javascript">
+function AlertIt(){
+	//亂數
+	var myrandom = Math.round(Math.random()*1)
+	//一些白痴的話，用矩陣 Array
+	var messages = new Array()
+	messages[0] = "ㄎ ㄎ "
+	messages[1] = "RELAX"
+	//連結清單
+	var links = new Array()
+	links[0] = "1.html"
+	links[1] = "https://www.youtube.com/watch?v=DkdGBN9iQnM"
+	//呼叫確認視窗
+	var answer = confirm(messages[myrandom])
+	//重點來了，如果點「是」，就連去該變數所指的網站
+	if (answer){
+		window.location = links[myrandom]
+	} 
+}
+</script>
+<table width="100%" height ="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="middle">
+			<a href="javascript:AlertIt();">
+				<img src="1.gif">
+				<p>PUSH			</p>
+			</a>
+			<object classid="clsid:166B1BCA-3F9C-11CF-8075-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/director/sw.cab#version=10,1,1,0" width="199" height="66" title="1">
+			  <param name="src" value="white_noise1.mp3" />
+			  <param name="AutoStart" value="true" />
+			  <embed src="white_noise1.mp3" width="199" height="66" pluginspage="http://www.adobe.com/shockwave/download/" autostart="true"></embed>
+	  </object></td>
+  </tr>
+</table>
+</body>
+</html>
